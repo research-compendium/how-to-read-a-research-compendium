@@ -102,7 +102,7 @@ Should a fifth pass be added for Open Science, i.e. using (parts of) data or cod
 
 # Acknowledgments {-}
 
-> _The first version of this document was drafted by my students: Hossein Falaki, Earl Oliver, and Sumair Ur Rahman._A
+> _The first version of this document was drafted by my students: Hossein Falaki, Earl Oliver, and Sumair Ur Rahman._
 > _My thanks to them._ 
 > _I also benefited from Christophe Diot’s perceptive comments and Nicole Keshav’s eagle-eyed copy-editing._
 > _I would like to make this a living document, updating it as I receive comments._

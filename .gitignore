@@ -33,3 +33,7 @@ vignettes/*.pdf
 *.knit.md
 how-to-read-a-research-compendium.tex
 how-to-read-a-research-compendium.pdf
+how-to-read-a-research-compendium.aux
+how-to-read-a-research-compendium.log
+how-to-read-a-research-compendium.out
+missfont.log
