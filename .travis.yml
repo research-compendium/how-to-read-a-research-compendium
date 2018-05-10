@@ -1,0 +1,18 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull rocker/verse:3.5
+
+script:
+  - docker run --rm -v $(pwd):/home/rstudio --user root rocker/verse:3.5 r -e "devtools::install_github('rstudio/rticles'); rmarkdown::render('/home/rstudio/how-to-read-a-research-compendium.Rmd', output_dir = '/home/rstudio/pages')"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token:
+    secure: xL/1YYxB73rKMf9ntMKg5wZ8Ey76dV+267cmRJYJ9UzcyOOi6VhYvjQBRqe9Y/BbQdSTEzREnO7A1zcRY+43wd0D6FGyPr0tYFnfmyReO7Y0cxa/ZUyesOz6clYhS+4l45hLD/nLFWqDL7VvPjbZhnzGmeL+uERZKgP2kkL2TJWceIcViUGwwks2taTKgiUuBjFJ0hhWp+iWhhOAtesuBxIxN0X1N4xa5/JpJnHs+Z/weDSQUMnXM0Q0OCajGw3xbQQvwfEnXNk1gPRO49YVa++Pdl1683BtVJVLUV5nvOX0XPqpbszSwD5FLT9L6TIer0JHvvvXi7aX2YYLUngYBJSDUa6NhtWhvkSA9SvYtmNUZ2Lri39oYoAnl3etWOKKK1RZ9dY4qJclQBNrnYvYiDdqm/yUiJowYPxWeAgLLNCMnt/DlTHn+MiHdnTnfjd1xFq/l4blZcgbETyncDCMseVc5SrptIEQPyUOEdi5RvTwtYMIQOIK5rCEzzDfchmNoaavOzFURjgIMJdLWADa1t7XaoV/UrJxwFEgGJJZgTXw6BGXvpvVCf4UKFP1j8h/RkF+3oYzXv4DQMEScDBmU6m0hDl9obhYAvWfaWp0Bus4sRKOoRTBXR8bSjUur7rKgH1DdzIwgViPGVDAi/MWfqz+GhbfbbKYaQ5i7oRJfi8=
+  local_dir: pages
+  on:
+branch: master
