@@ -1,0 +1,112 @@
+---
+title: How to Read a Research Compendium
+preprint: true
+author: 
+  - name: Daniel Nüst
+    affiliation: 1
+    corresponding: true
+    email: daniel.nuest@uni-muenster.de
+  - name: Srinivasan Keshav
+    affiliation: 2
+    email: keshav@uwaterloo.ca
+affiliation:
+  - code: 1
+    address: Institute for Geoinformatics, University of Münster, Münster, Germany
+  - code: 2
+    address: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, ON, Canada
+abstract: >
+  _Researchers spend a great deal of time reading research papers._
+  Keshav (2012) provides a three-pass method to researchers to improve their reading skills.
+  This article extends Keshav's method to work for research compendia (RC).
+  RC are an increasingly used form of publication packaging not only the research paper text and figures, but also all data and software used to conduct the computational workflow and create all outputs.
+  We list the existing conventions for RC and suggest how to utilise their shared properties in a structured reading process.
+  Unlike the original, this article is not build upon a long history but intends to provide guidance at the outset of an emerging practice.
+header-includes: >
+bibliography: bibliography.bib
+output: 
+  rticles::peerj_article:
+    base_format: rmarkdown::pdf_document # bookdown::pdf_document2 # for using \@ref()
+---
+
+<!-- Citations: @Figueredo:2009dg, citep: [@Figueredo:2009dg] -->
+
+# Introduction {-}
+
+## Motivation
+
+Research compendia (RC) are an increasingly used form of publications.
+They comprise not only the research paper text and figures, but also all data and software used to conduct the computational workflow and create all outputs.
+They provide a lot of added value but potentially also increase complexity for understanding, if not done well.
+Therefore this work extends Keshav's three-pass method targeted at improving researcher's research paper reading skills [@keshav_how_2007] with additional steps to capture an RC's content.
+
+Unlike the original, this article is not build upon a long history but intends to provide guidance at the outset of an emerging practice.
+In the remainder of this paper, the excellent original work that is taken over verbatim is in _italic font_ based on the most recent online version [@keshav_how_2016], such as the following introductory remarks applying directly to RCs.
+
+> _Researchers must read papers for several reasons:_
+> _to review  them  for  a  conference  or  a  class,  to  keep  current  in their field, or for a literature survey of a new field._
+> _A typical researcher will likely spend hundreds of hours every year reading papers._
+> 
+> _Learning to efficiently read a paper is a critical but rarely taught skill._
+> _Beginning graduate students, therefore, must learn  on  their  own  using  trial  and  error._
+> _Students  waste much effort in the process and are frequently driven to frustration._
+> 
+> _For many years I have used a simple ‘three-pass’ approach to prevent me from drowning in the details of a paper before getting a bird’s-eye-view._
+> _It allows me to estimate the amount of time required to review a set of papers._
+> _Moreover, I can adjust the depth of paper evaluation depending on my needs and how much time I have._
+> _This paper describes the approach and its use in doing a literature survey._ [@keshav_how_2016]
+
+## Structure
+
+In the remainder of this paper, we briefly introduce research compendia and existing conventions as part of this section.
+Then, matching the original paper's numbering, the "Three-pass Approach" is extended to include RC features in the reading process.
+Two sections from the original paper are missing as they are not directly transferable to RC ("3. Doing a Literature Survey", and "5. Related Work").
+
+## Research Compendia {-}
+
+RC improve transparency and quality of research [REF].
+
+Something on data...
+
+Something on environments...
+
+Something on code...
+
+**Conventions**
+
+- ERC: http://o2r.info/erc-spec
+- rrtools: https://github.com/benmarwick/rrtools
+- popper: http://falsifiable.us/
+- ...
+
+# The Three-pass Approach {-}
+
+> _The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end._
+> _Each pass accomplishes specific goals  and  builds  upon  the  previous  pass:_
+> _The first pass gives you a general idea about the paper._ 
+> _The second pass lets you grasp the paper’s content, but not its details._ 
+> _The third pass helps you understand the paper in depth._ [@keshav_how_2016]
+
+## The first pass {-}
+
+## The second pass {-}
+
+## The third pass {-}
+
+# A Request
+
+In the spirit of the original paper, we would like to make this a living document and invite readers to provide comments or suggestions for improvement via email, as part of this preprint, or on the GitHub repository: [https://github.com/nuest/how-to-read-a-research-compendium](https://github.com/nuest/how-to-read-a-research-compendium).
+
+Open questions by the authors are:
+Should trying out assumptions with code and data be a 4th pass?
+Should a fifth pass be added for Open Science, i.e. using (parts of) data or code for own work?
+
+# Acknowledgments {-}
+
+> _The first version of this document was drafted by my students: Hossein Falaki, Earl Oliver, and Sumair Ur Rahman._A
+> _My thanks to them._ 
+> _I also benefited from Christophe Diot’s perceptive comments and Nicole Keshav’s eagle-eyed copy-editing._
+> _I would like to make this a living document, updating it as I receive comments._
+> _Please take a moment to email me any comments or suggestions for improvement._
+> _Thanks to encouraging  feedback  from  many  correspondents over the years._
+
+# References

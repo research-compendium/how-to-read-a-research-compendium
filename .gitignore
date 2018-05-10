@@ -31,3 +31,5 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+how-to-read-a-research-compendium.tex
+how-to-read-a-research-compendium.pdf
