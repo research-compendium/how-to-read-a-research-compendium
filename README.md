@@ -4,4 +4,15 @@
 
 **http://blizzard.cs.uwaterloo.ca/keshav/wiki/index.php/HTRAP**
 
-PDF: https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf
+PDF: [https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf](https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf)
+
+## Render the paper PDF
+
+Rendering the PDF requires `rticles` to be installed from GitHub as the `peerj` article format is not yet on CRAN.
+
+Locally with R:
+
+- Start an R session in the directory of this file
+- Run `rmarkdown::render('how-to-read-a-research-compendium.Rmd')`
+
+Locally with a container: See the command used in `.travis.yml`
