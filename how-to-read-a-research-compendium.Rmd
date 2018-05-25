@@ -256,15 +256,30 @@ You can create branches for specific explorations and easily reset to the origin
 
 You should be able to come up with useful extensions of the used software stack and be able to judge the transferability and reusability of the analysis' building blocks.
 You should most certainly have improved your programming skills by reading and evaluating other people's code.
+# 3. Doing a literature survey {-}
 
-# 3. Acknowledgments {-}
+
+# 4. Related work {-}
+
+> _If you are reading a paper to do a review, you should also read Timothy Roscoe's paper on "Writing reviews for systems conferences" [@roscoe_writing_2007]._
+> _If you’re planning to write a technical paper, you should refer both to Henning Schulzrinne's comprehensive web site [@schulzrinne_writing_nodate] and George Whitesides’s excellent overview of the process [@whitesides_whitesides_2004]._
+> _Finally, Simon Peyton Jones has a website that covers the entire spectrum of research skills [@peyton_jones_simon_nodate]._
+> _Iain H. McLean of Psychology, Inc. has put together a downloadable 'review matrix' that simplifies paper reviewing using the three-pass approach for papers in experimental psychology [@mclean_literature_2012], which can probably be used, with minor modifications, for papers in other areas._ [@keshav_how_2016]
+
+We have extended this matrix to provide space for notes about software, data, results of the reproduction, and application of the methods.
+
+WIP: https://github.com/nuest/how-to-read-a-research-compendium/issues/2
+
+[//]: # (maybe add https://www.bmj.com/about-bmj/resources-readers/publications/how-read-paper)
+
+# 5. Acknowledgments {-}
 
 > _The first version of this document was drafted by my students: Hossein Falaki, Earl Oliver, and Sumair Ur Rahman._
 > _My thanks to them._ 
 > _I also benefited from Christophe Diot’s perceptive comments and Nicole Keshav’s eagle-eyed copy-editing._
 > _I would like to make this a living document, updating it as I receive comments._
 > _Please take a moment to email me any comments or suggestions for improvement._
-> _Thanks to encouraging  feedback  from  many  correspondents over the years._
+> _Thanks to encouraging  feedback  from  many  correspondents over the years._ [@keshav_how_2016]
 
 In the spirit of the original paper, we would like to make this a living document and invite readers to provide comments or suggestions for improvement via email, as part of this preprint, or on the GitHub repository: [https://github.com/nuest/how-to-read-a-research-compendium](https://github.com/nuest/how-to-read-a-research-compendium).
 The repository also includes open questions and is where the paper's authors openly discuss.
