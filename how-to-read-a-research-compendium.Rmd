@@ -258,6 +258,53 @@ You should be able to come up with useful extensions of the used software stack 
 You should most certainly have improved your programming skills by reading and evaluating other people's code.
 # 3. Doing a literature survey {-}
 
+> _Paper reading skills are put to the test in doing a literature survey._
+> _This will require you to read tens of papers, perhaps in an unfamiliar field._
+> _What papers should you read?_
+> _Here is how you can use the three-pass approach to help._
+> _First, use an academic search engine such as Google Scholar or CiteSeer and some well-chosen keywords to find three to five recent highly-cited papers in the area. [@keshav_how_2016]
+
+No search capability comparable to scientific articles exists for RC, though you can of course use generic and academic search engines. More and more journals encourage reproducible research and software and data publication, so that extending your search regular search with keywords such as "reproduction", "reproducible", "open data/software/code" may give improve your results.
+
+In addition, you can search online platforms where RC may be published and tagged as an RC (`research-compendium`):
+
+- GitHub label: https://github.com/topics/research-compendium
+- Zenodo community: https://zenodo.org/communities/research-compendium
+
+There is no journal specifically for research compendia yet, but the following ones feature reproducibility, computational studies, or openness in some way and can be a starting point if they fit your topic:
+
+- _ReScience_: https://rescience.github.io/
+- _Information Systems_ has a reproducibility editor and special track for invited reproducibility papers: https://www.journals.elsevier.com/information-systems/
+
+A lateral approach takes advantage of the parts of a RC.
+If you work with a specific software (tool, extension package, library) or data, find out the recommended way to cite it (and follow it yourself).
+Most scientific software provides this information in their FAQ or might have a build in function to generate a citation, and scientific data is often accompanied by a "data paper" or published in repositories with citeable identifiers.
+
+Then search for recent papers which cite the core software or data of interest.
+
+> _Do one pass on each paper to get a sense of the work, then read their related work sections._
+> _You will find a thumbnail summary of the recent work, and perhaps, if you are lucky, a pointer to a recent survey paper._
+> _If you can find such a survey, you are done._
+> _Read the survey, congratulating yourself on your good luck._
+> _Otherwise,  in the second step,  find shared citations and repeated author names in the bibliography._
+> _These are the key papers and researchers in that area._
+
+You can also find shared software or data and use them as a seed for a next iteration.
+
+> _Download the key papers and set them aside._
+> _Then go to the websites of the key researchers and see where they’ve published recently._
+> _That will help you identify the top conferences in that field because the best researchers usually publish in the top conferences._
+
+Also check where they publish their code and data.
+It will give you an idea where this community interacts online and even lead you to RC under development.
+
+> _The third step is to go to the website for these top conferences and look through their recent proceedings._
+> _A quick scan will usually identify recent high-quality related work._
+> _These papers, along with the ones you set aside earlier, constitute the first version of your survey._
+> _Make two passes through these papers._
+> _If they all cite a key paper that you did not find earlier, obtain and read it, iterating as necessary._ [@keshav_how_2016]
+
+If a majority cites or uses a key software, technology, or dataset, evaluate it.
 
 # 4. Related work {-}
 
