@@ -142,8 +142,8 @@ _At the end of the first pass, you should be able to answer the_ seven _Cs:_
 3. _Correctness: Do the assumptions appear to be valid?_
 4. _Contributions: What are the paper’s main contributions?_
 5. _Clarity: Is the paper well written?_
-6. Construction: What are the building blocks of the analysis workflow (data set(s), programming language(s), tools, algorithms, scripts)? Where, how, and by whom are they published (licenses, collaborators)? Are they established and maintained, or orphaned?
-7. Complexity: What is the scale of the analysis (e.g. computations work only on HPC, typical execution time, data size)?
+6. Construction: What are the building blocks of the analysis workflow and how accessible are they (data set(s), programming language(s), tools, algorithms, scripts)? Under what licenses is the code published?
+7. Complexity: What is the scale of the analysis (e.g. HPC, required OS/cores/memory, typical execution time, data size) and the software (number of dependencies and is installation possible with dependency management tools)?
 
 > _Using this information, you may choose not to read further (and not print it out, thus saving trees)._
 > _This could be because the paper doesn’t interest you, or you don’t know enough about the area to understand the paper, or that the authors make invalid assumptions._ [@keshav_how_2016]
@@ -154,6 +154,7 @@ Reasons related to code and data may be that you don't know have the expertise o
 > _The first pass is adequate for papers that aren’t in your research area, but may someday prove relevant._ [@keshav_how_2016]
 
 It suits RC comprising potentially re-usable components, like workflows or algorithms using data sets or generic software transferable to your field of research.
+After the first pass, you should be able to judge if the software is useful if it works.
 
 > _Incidentally, when you write a paper, you can expect most reviewers (and readers) to make only one pass over it._
 > _Take care to choose coherent section and sub-section titles and to write concise and comprehensive abstracts._
@@ -178,10 +179,16 @@ It is better to come up with your own structure or solution, than providing no r
  
 1. _Look carefully at the figures, diagrams and other illustrations in the paper. Pay special attention to graphs. Are the axes properly labeled?_
 _Are results shown with error bars, so that conclusions are statistically significant? Common mistakes like these will separate rushed, shoddy work from the truly excellent._ [@keshav_how_2016]
-2. _Remember to mark relevant unread references for further reading (this is a good way to learn more about the background of the paper)._ [@keshav_how_2016]
-3. Skim over data and source code files. Are they reasonably named, or do they even follow a well-defined structure (e.g. a Python package or a research compendium convention)?
-4. Follow the instructions to execute the RC's workflow and compare the outputs with the ones reported in the paper. Note down errors or warnings during execution but do not try to fix any but trivial or known problems.
-5. Check for differences in output figures. Do labels, legends etc. match?
+1. _Remember to mark relevant unread references for further reading (this is a good way to learn more about the background of the paper)._ [@keshav_how_2016]
+1. Skim over data and source code files. Are they reasonably named, or do they even follow a well-defined structure (e.g. a Python package or a research compendium convention)? Do they have comments? Is there a README file and/or structured documentation for functionalities?
+1. Visit the source code repository, if available. Is it established and well maintained, or orphaned? Is there only one author or are there contributors? How responsive are they to issues? Does the repository have "stars" (i.e. public bookmarks) or forks? Are there regular releases, using semantic versioning?
+1. Follow the instructions to execute the RC's workflow and compare the outputs with the ones reported in the paper. Note down errors or warnings during execution but do not try to fix any but trivial or known problems.
+1. Check for differences in output figures. Do labels, legends etc. match?
+
+The listing above gives a lot of examples how to estimate the quality of a software, but we recommend to be realistic as to what to expect and careful not to judge too fast.
+The software project you evaluate might be done by a researcher under a lot of pressure and have only a single user and use case.
+It is OK not to document beyond the information required by the author, and the documentation might be provided quickly once you as an external user show interest.
+Also, no recent changes or releases can also mean the software is stable and simply works!
 
 > _The second pass should take up to an hour for an experienced reader._ [@keshav_how_2016]
 
@@ -192,7 +199,7 @@ As an author, consider adding a reduced example to your RC for easier access by 
 
 You may do quick or obvious fixes that prohibit a successful workflow execution, like fixing a path or install an undocumented dependency.
 However we do recommend not to dive too deep - it is the author's responsibility to guide you through her work.
-You may also face unsolvable problems, like access to specific infrastructure. 
+You may also face unsolvable problems, like access to specific infrastructure.
 But you should report issues, for example in the software's public code repository, if available.
 
 > _After this pass, you should be able to grasp the content of the paper._ [@keshav_how_2016]
@@ -205,10 +212,10 @@ At this point you should be able to judge whether you might want to re-use parts
 > _Sometimes you won’t understand a paper even at the end of the second pass._
 > _This may be because the subject matter is new to you, with unfamiliar terminology and acronyms._
 > _Or the authors may use a proof or experimental technique that you don’t understand, so that the bulk of the paper is incomprehensible._
-> _The paper may be poorly written with unsubstantiated assertions and numerous forward references._
+> _The paper may be poorly written with unsubstantiated assertions and numerous forward references._ [@keshav_how_2016]
 
 The RC may have incomplete documentation, rely on unavailable (e.g. proprietary) software or data, or require infrastructure not available to you.
-It may use a programming language or programming paradigms unknown to you. [@keshav_how_2016]
+It may use a programming language or programming paradigms unknown to you.
 
 > _Or it could just be that it’s late at night and you’re tired._
 > _You can now choose to: (a) set the paper aside, hoping you don’t need to understand the material to be successful in your career, (b) return to the paper later, perhaps after reading background material or (c) persevere and go on to the third pass._ [@keshav_how_2016]
@@ -226,30 +233,33 @@ If a best practice for structuring data and code was followed, familiarise yours
 > _Moreover, you should think about how you yourself would present a particular idea._
 > _This comparison of the actual with the virtual lends a sharp insight into the proof and presentation techniques in the paper and you can very likely add this to your repertoire of tools._ [@keshav_how_2016]
 
-Take a close look at data and its metadata.
+Take a close look at data, metadata, and code.
+This can be a time consuming very close study of the materials.
 If data is not publicly available, e.g. because it may contain identifying information about humans, decide if you have a reasonable request to contact the original authors and ask for data access.
-
-Read though analysis scripts and play close attention not only to code, but also to code comments as they should include helpful information.
-A good entry point for your code read may be a "main" script (if provided by the author), but if that is not given then start with the code creating the figures for the article.
-From there, trace your way back through the code until you reach a statement where the input data is read.
+Work though the examples and analysis scripts included in the RC.
+Play close attention not only to code, but also to code comments as they should include helpful information.
+A good entry point for your code read may be a "main" script (if provided by the author) or literate programming document.
+If that is not given then start with the code creating the figures for the article (e.g. look for "`plot`" statements in the code) and trace your way back through the code until you reach a statement where the input data is read.
 Your impression on the code may support or refute your impression of the quality of the article's text.
 
-With respect to the analysis, this may mean you re-implement core parts or the full workflows a different software, most probably one you know but was not used in the RC you read.
-Does your code lead to the same results, or does it give different ones?
-Can the differences be explained or are they significant?
-
-Since the work is relevant for you, spend more time on getting the analysis to run on your computer and do not hesitate to contact the author of the paper of authors of used software.
+If you did not succeed before but the work is relevant for you, spend more time on getting the analysis to run on your computer and do not hesitate to contact the author of the paper of authors of used software.
 For them it is a great experience to be contacted by an interested reader!
+
+With respect to the analysis, you may re-implement core parts or the full workflow with a different software.
+For example using a tool one you know but which was not used in the RC.
+Does your code lead to the same results, or does it give different ones?
+Can the differences be explained or are they not significant?
 Note that such a replication is of very high value for scholarly publishing and you should share your results with the RC's authors and also with the scientific community.
 Depending on the efforts you put in, write a blog post or even publish a replication ~~paper~~ research compendium for one or more evaluated RCs.
 
 If a full replication is not feasible, explore the assumptions you challenge with data and code.
 Play around with input parameters to get a feel for the changing results.
 Create explorative plots for the data as if you would want to analyse it, without the knowledge of the existing workflow.
+With your understanding of the code now you can also extend the application to a new problem or different dataset.
 This deep evaluation of code and data increases your understanding of the author's reasoning and decisions, and may lead to new questions.
 
 To make sure you can trace your own hands-on changes with the original code and configuration, we recommend initiating a local git repository.
-You can create branches for specific explorations and easily reset to the original state.
+You can create branches for specific explorations and easily reset to the original functional state.
 
 > _During this pass, you should also jot down ideas for future work._
 > _This pass can take many hours for beginners and more than an hour or two even for an experienced reader._
@@ -257,7 +267,8 @@ You can create branches for specific explorations and easily reset to the origin
 > _In particular, you should be able to pinpoint implicit assumptions, missing citations to relevant work, and potential issues with experimental or analytical techniques._ [@keshav_how_2016]
 
 You should be able to come up with useful extensions of the used software stack and be able to judge the transferability and reusability of the analysis' building blocks.
-You should most certainly have improved your programming skills by reading and evaluating other people's code.
+You should most certainly have improved your programming skills by reading and evaluating other people's code or even trying to apply it to a new problem.
+
 # 3. Doing a literature survey {-}
 
 > _Paper reading skills are put to the test in doing a literature survey._
