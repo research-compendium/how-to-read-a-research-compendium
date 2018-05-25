@@ -1,10 +1,10 @@
 # How to Read a Research Compendium
 
-"How to Read a Research Compendium" - based on S. Keshav's "How to Read a Paper"
+"How to Read a Research Compendium" - based on [S. Keshav's "How to Read a Paper"](http://blizzard.cs.uwaterloo.ca/keshav/wiki/index.php/HTRAP).
 
-**http://blizzard.cs.uwaterloo.ca/keshav/wiki/index.php/HTRAP**
+A PDF is rendered on Travis: [![Build Status](https://travis-ci.org/nuest/how-to-read-a-research-compendium.svg?branch=master)](https://travis-ci.org/nuest/how-to-read-a-research-compendium)
 
-PDF: [https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf](https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf)
+Download it: [https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf](https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf)
 
 ## Render the paper PDF
 
