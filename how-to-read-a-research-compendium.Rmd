@@ -70,6 +70,11 @@ Keshav's following introduction applies directly to RCs:
 > _Moreover, I can adjust the depth of paper evaluation depending on my needs and how much time I have._
 > _This paper describes the approach and its use in doing a literature survey._ [@keshav_how_2016]
 
+The additions made in this work to accomodate for the content in a research compendium are quite extensive.
+At first glance this is naturally due to the complexity that an interactive compendium has compared to static classic "paper".
+A research compendium goes well beyond the "mere advertising of the scholarship" [@claerbout_seventeen_1994].
+Therefore we see the breadth of additions as a sign of potential, namely for unprecedented openness and collaboration.
+
 ### 1.2 Structure {-}
 
 In the remainder of this paper, the excellent original work that is taken over verbatim is in _italic font_ based on the most recent online version: @keshav_how_2016.
@@ -81,37 +86,30 @@ Section 3 extends "Doing a Literature Survey" with aspects relevant reviewing ma
 
 ### 1.3 Research compendia {-}
 
-Term coined by @gentleman_statistical_2007.
-RC improve transparency and quality of research [REF].
-The code in science is good enough [@barnes_publish_2010].
-RC improve citations [@vandevalle_code_2012].
-RC answer scientists needs [@konkol_-depth_2018].
+The term _research compendium_ was  coined by @gentleman_statistical_2007 who "introduce[d] the concept of a compendium as both a container for the different elements that make up the document and its computations (i.e. text, code, data,...), and as a means for distributing, managing and updating the collection."
+According to [@marwick_packaging_2018] it provides "a standard and easily recognisable way for organising the digital materials of a research project to enable other researchers to inspect, reproduce, and extend the research".
+This standard may differ between scientific domains, yet the intentions and benefits are the same.
+RC improve transparency and quality of research [REF], enable enhanced review and publication workflows [@nust_opening_2017], and answer readers' needs to understand complex analyses [@konkol_-depth_2018].
+RC improve citations since code and data are openly available [@vandevalle_code_2012].
+Ultimately, their goal is to improve reproducibility (see @barba_terminologies_2018 for definitions of terms) in the light of a "reproducibility crisis".
 
-Briefly touch on (without doing a full literature study...)
+As this article should provide hands-on guidance on using, and to some extend also creating, research compendia, we refer the reader to the references for details.
+All of them provide more information than the specific aspect they are mentioned for in this article.
+Instead, for the remainder of this work, we assume a minimal view on a research compendium suitable for _readers_ (for a more detailed discussion see @marwick_packaging_2018, @gentleman_statistical_2007) who examine a research compendium manually.
+An RC has three integral parts: text, code, and data.
+Text can be instructions, software documentation, or a full manuscript.
+Code can be scripts, software packages, specifications of dependencies and computational environments, or even virtual machines.
+Data can be just about anything, but probably comprises inputs and outputs.
 
-- FAIR data
-- Notebook science
-- Computational environments
-- Generic aspects of RC
-  - "one click" / one wrapper / Makefile / main method
-  - "Ten simple rules for..."
-    - "Reproducible computational research" @sandve_ten_2013
-    - "making research software more robust" @taschuk_ten_2017
-    - "the Open Development of Scientific Software" @prlic_ten_2012
-  - literate programming
-  - scientific workflow systems
-  - licensing @stodden_legal_2009
+For _authors_, there is a wealth of generic recommendations guiding researchers in creating open research software [@sandve_ten_2013,@taschuk_ten_2017,@prlic_ten_2012,@stodden_best_2014,@wilson_good_2017].
+When a research compendium is published, we assume the author has the intention to help the reader understanding the work and accepts there are "no excuses" to not publishing your code [@barnes_publish_2010].
+An author may attempt to reach the ideal of having one "main" file that can be executed with "one-click" [@pebesma_earth_2013], enabling re-use with proper licensing [@stodden_legal_2009], and interweaving code and text following the literate programming paradigm [@knuth_literate_1984].
+The following conventions are specifically for research compendia:
 
-Add the RR/Open Science "pyramid"
-
-**Conventions**
-
+- @marwick_packaging_2018 discuss the structure and tooling of the R programming language and software engineering tools for a variety of disciplines with real-world examples, including several templates for R
 - https://github.com/ropensci/rrrpkg
-- ERC: http://o2r.info/erc-spec
-- rrtools (https://github.com/benmarwick/rrtools)
-- @marwick_packaging_2017
 - popper: http://falsifiable.us/ and @jimenez_popper_2017
-- R packages, Python packages [@gentleman_statistical_2007]
+- R and Python packages [@gentleman_statistical_2007], also npm packages?
 - Researchcompendia.org [@stodden_researchcompendia.org:_2015]
 
 # 2. The three-pass approach {-}
@@ -121,6 +119,8 @@ Add the RR/Open Science "pyramid"
 > _The first pass gives you a general idea about the paper._ 
 > _The second pass lets you grasp the paper’s content, but not its details._ 
 > _The third pass helps you understand the paper in depth._ [@keshav_how_2016]
+
+The fourth pass gets you started on building upon and extending the paper.
 
 ## 2.1 The first pass {-}
 
@@ -214,7 +214,7 @@ At this point you should be able to judge whether you might want to re-use parts
 > _Or the authors may use a proof or experimental technique that you don’t understand, so that the bulk of the paper is incomprehensible._
 > _The paper may be poorly written with unsubstantiated assertions and numerous forward references._ [@keshav_how_2016]
 
-The RC may have incomplete documentation, rely on unavailable (e.g. proprietary) software or data, or require infrastructure not available to you.
+The RC may have incomplete documentation, rely on unavailable (e.g. proprietary) software or (e.g. sensitive) data, or require infrastructure not available to you.
 It may use a programming language or programming paradigms unknown to you.
 
 > _Or it could just be that it’s late at night and you’re tired._
@@ -329,6 +329,10 @@ If a majority cites or uses a key software, technology, or dataset, evaluate it.
 We have extended this matrix to provide space for notes about software, data, results of the reproduction, and application of the methods.
 
 WIP: https://github.com/nuest/how-to-read-a-research-compendium/issues/2
+
+Infrastructures supporting the creating and inspection of research compendia is an active field of research, but none of which have been widely deployed yet (@nust_opening_2017,@brinckman_computing_2018,@stodden_researchcompendia.org:_2015,@kluyver_jupyter_2016).
+
+If you are reviewing a research compendium, a more detailed checklist is given in the "rOpenSci Analysis Best Pratice Guidelines" [@ropensci_ropensci_2017], which are partially even automated for R-based research compendia [@decicco_checkers:_2018].
 
 [//]: # (maybe add https://www.bmj.com/about-bmj/resources-readers/publications/how-read-paper)
 
