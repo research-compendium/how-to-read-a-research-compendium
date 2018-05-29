@@ -44,21 +44,21 @@ output:
 
 ## 1.1 Motivation {-}
 
-Research compendia (RC) are an increasingly used form of publications.
-They comprise not only the research paper text and figures, but also all data and software used to conduct the computational workflow and create all outputs.
-They provide a lot of added value but potentially also increase complexity for understanding, if not done well.
-Therefore this work extends Keshav's three-pass method targeted at improving researcher's research paper reading skills [@keshav_how_2007] with additional steps to capture an RC's content.
+Research compendia are an increasingly used form of publication and scholarly communication.
+They comprise not only the research paper text and figures, but also all data and software used to generate the computational workflow and create all outputs.
+They provide a lot of added value by revealing more of the research process to readers, but, if not done well, they can increase the difficulty of understanding the research.
+To help readers better understand how to read a research compendia, we extends Keshav's three-pass method targeted at improving our skills for reading a research paper [@keshav_how_2007] with additional steps relevant to a research compendium's content.
 
-Unlike the first version of the original [@keshav_how_2007], we cannot draw from a long history of experience.
-But we intend to provide guidance at the outset of an emerging practice to both authors and readers of research compendia to understand each others perspectives and needs.
-Authors may use this guide to improve their RC's structure and content, as they can better prepare for how readers may approach their work.
-Readers may avoid the trap of falling too deep into technology challenges by an iterative reading approach.
-This work may also improve the interaction between authors and mitigate unwarranted concerns, like giving support [@barnes_publish_2010]. 
-Ultimately RCs can enhance and deepen the reading experience, if done right.
-Keshav's following introduction applies directly to RCs:
+Unlike the first version of the original [@keshav_how_2007], we cannot draw from a long history of experience because  research compendia have been relatively rare until recently.
+Our intention here is to provide guidance at the outset of an emerging practice to both authors and readers of research compendia to help them understand each others' perspectives and needs.
+Authors can use this guide to improve their research compendium's structure and content, to better anticipate readers' needs when creating the compendium.
+Readers can avoid the trap of falling too deep into technological challenges by an iterative reading approach that allocates attention to the scientific issues.
+We also hope to improve the interaction between authors and mitigate unwarranted concerns, like providing support [@barnes_publish_2010]. 
+Ultimately  research compendia can enhance and deepen the reading experience, if done right.
+Keshav's following introduction applies directly to research compendia:
 
 > _Researchers must read papers for several reasons:_
-> _to review  them  for  a  conference  or  a  class,  to  keep  current  in their field, or for a literature survey of a new field._
+> _to review them for a conference or a class, to keep current in their field, or for a literature survey of a new field._
 > _A typical researcher will likely spend hundreds of hours every year reading papers._
 > 
 > _Learning to efficiently read a paper is a critical but rarely taught skill._
@@ -70,8 +70,8 @@ Keshav's following introduction applies directly to RCs:
 > _Moreover, I can adjust the depth of paper evaluation depending on my needs and how much time I have._
 > _This paper describes the approach and its use in doing a literature survey._ [@keshav_how_2016]
 
-The additions made in this work to accomodate for the content in a research compendium are quite extensive.
-At first glance this is naturally due to the complexity that an interactive compendium has compared to static classic "paper".
+The additions made in this work to accommodate for the content in a research compendium are quite extensive.
+At first glance this is naturally due to the complexity that an interactive compendium has compared to a  classic static "paper".
 A research compendium goes well beyond the "mere advertising of the scholarship" [@claerbout_seventeen_1994].
 Therefore we see the breadth of additions as a sign of potential, namely for unprecedented openness and collaboration.
 
@@ -80,26 +80,25 @@ Therefore we see the breadth of additions as a sign of potential, namely for unp
 In the remainder of this paper, the excellent original work that is taken over verbatim is in _italic font_ based on the most recent online version: @keshav_how_2016.
 The term "paper" was not replaced with "research compendium" if no other changes were made in a paragraph.
 
-First we briefly introduce research compendia and existing conventions, and also point out relevant publications as well as examples for authors of RCs.
-Then, matching the original paper's section numbering, Sections 2 extends the "Three-pass Approach" to include RC features in the reading process.
-Section 3 extends "Doing a Literature Survey" with aspects relevant reviewing many RCs.
+First we briefly introduce research compendia and existing conventions, and also point out relevant publications as well as examples for authors of research compendia.
+Then, matching the original paper's section numbering, Sections 2 extends the "Three-pass Approach" to include research compendium features in the reading process.
+Section 3 extends "Doing a Literature Survey" with aspects relevant reviewing many research compendia.
 
 ### 1.3 Research compendia {-}
 
 The term _research compendium_ was  coined by @gentleman_statistical_2007 who "introduce[d] the concept of a compendium as both a container for the different elements that make up the document and its computations (i.e. text, code, data,...), and as a means for distributing, managing and updating the collection."
 According to [@marwick_packaging_2018] it provides "a standard and easily recognisable way for organising the digital materials of a research project to enable other researchers to inspect, reproduce, and extend the research".
 This standard may differ between scientific domains, yet the intentions and benefits are the same.
-RC improve transparency and quality of research [REF], enable enhanced review and publication workflows [@nust_opening_2017], and answer readers' needs to understand complex analyses [@konkol_-depth_2018].
-RC improve citations since code and data are openly available [@vandevalle_code_2012].
-Ultimately, their goal is to improve reproducibility (see @barba_terminologies_2018 for definitions of terms) in the light of a "reproducibility crisis".
+Research compendia improve transparency and quality of research [REF], enable enhanced review and publication workflows [@nust_opening_2017], and answer readers' needs to understand complex analyses [@konkol_-depth_2018].
+Research compendia improve citations since code and data are openly available [@vandevalle_code_2012].
+Ultimately, their goal is to improve reproducibility (see @barba_terminologies_2018 for definitions of terms) in the light of claims a "reproducibility crisis" in several fields.
 
-As this article should provide hands-on guidance on using, and to some extend also creating, research compendia, we refer the reader to the references for details.
-All of them provide more information than the specific aspect they are mentioned for in this article.
-Instead, for the remainder of this work, we assume a minimal view on a research compendium suitable for _readers_ (for a more detailed discussion see @marwick_packaging_2018, @gentleman_statistical_2007) who examine a research compendium manually.
-An RC has three integral parts: text, code, and data.
+As this article is focused on providing hands-on guidance on using, and to some extend also creating, research compendia, we refer the reader to the references for more specific details.
+For the remainder of this work, we assume a minimal view of a research compendium suitable for _readers_ (for a more detailed discussion see @marwick_packaging_2018, @gentleman_statistical_2007) who examine a research compendium manually.
+A research compendium has three integral parts: text, code, and data.
 Text can be instructions, software documentation, or a full manuscript.
 Code can be scripts, software packages, specifications of dependencies and computational environments, or even virtual machines.
-Data can be just about anything, but probably comprises inputs and outputs.
+Data can be just about anything, but probably comprises plain text or binary files that are used as input to the workflow, and produced as output from executing the workflow.
 
 For _authors_, there is a wealth of generic recommendations guiding researchers in creating open research software [@sandve_ten_2013,@taschuk_ten_2017,@prlic_ten_2012,@stodden_best_2014,@wilson_good_2017].
 When a research compendium is published, we assume the author has the intention to help the reader understanding the work and accepts there are "no excuses" to not publishing your code [@barnes_publish_2010].
@@ -114,13 +113,11 @@ The following conventions are specifically for research compendia:
 
 # 2. The three-pass approach {-}
 
-> _The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end._
-> _Each pass accomplishes specific goals  and  builds  upon  the  previous  pass:_
+> _The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and ploughing your way to the end._
+> _Each pass accomplishes specific goals and builds upon the previous pass:_
 > _The first pass gives you a general idea about the paper._ 
 > _The second pass lets you grasp the paper’s content, but not its details._ 
 > _The third pass helps you understand the paper in depth._ [@keshav_how_2016]
-
-The fourth pass gets you started on building upon and extending the paper.
 
 ## 2.1 The first pass {-}
 
@@ -133,7 +130,7 @@ The fourth pass gets you started on building upon and extending the paper.
 3. _Glance at the mathematical content (if any) to determine the underlying theoretical foundations_
 4. _Read the conclusions_
 5. _Glance over the references, mentally ticking off the ones you’ve already read_
-6. Glance over the text looking for (a) URLs and `formatted` **names** referencing software and data (repositories) not yet mentioned in the sections read so far, mentally ticking off the ones you've heard about or used, and (b) tables or figures describing computational environments, deployments, or execution statistics
+6. Glance over the text looking for (a) URLs and `formatted` **names** referencing software and data products or repositories not yet mentioned in the sections read so far, mentally ticking off the ones you've heard about or used, and (b) tables or figures describing computational environments, deployments, or execution statistics
  
 _At the end of the first pass, you should be able to answer the_ seven _Cs:_
 
@@ -148,27 +145,25 @@ _At the end of the first pass, you should be able to answer the_ seven _Cs:_
 > _Using this information, you may choose not to read further (and not print it out, thus saving trees)._
 > _This could be because the paper doesn’t interest you, or you don’t know enough about the area to understand the paper, or that the authors make invalid assumptions._ [@keshav_how_2016]
 
-You may also choose not to pursue the parts of the RC further, i.e. not looking at data, code, or running the workflow, thus saving resources.
-Reasons related to code and data may be that you don't know have the expertise or resources to re-use data and code with acceptable efforts.
+You may also choose not to pursue the parts of the research compendium further, i.e. not looking at data, code, or running the workflow, thus saving resources.
+Reasons to not read further that relate specifically to code and data may be that you don't have the expertise or access to resources to re-use the data and code.
 
 > _The first pass is adequate for papers that aren’t in your research area, but may someday prove relevant._ [@keshav_how_2016]
 
-It suits RC comprising potentially re-usable components, like workflows or algorithms using data sets or generic software transferable to your field of research.
-After the first pass, you should be able to judge if the software is useful if it works.
+This first pass suits research compendia comprising potentially re-usable components, like workflows or algorithms using data sets or generic software that are directly transferable to your field of research.
+After the first pass, you should be able to judge if the software is useful, if it works.
 
 > _Incidentally, when you write a paper, you can expect most reviewers (and readers) to make only one pass over it._
 > _Take care to choose coherent section and sub-section titles and to write concise and comprehensive abstracts._
 > _If a reviewer cannot understand the gist after one pass, the paper will likely be rejected; if a reader cannot understand the highlights of the paper after five minutes, the paper will likely never be read._
 > For these reasons, a ‘graphical abstract’ that summarizes a paper with a single well-chosen figure is an excellent idea and can be increasingly found in scientific journals._ [@keshav_how_2016]
 
-Take also care to add instructions to reproduce your work and provide all required parts, i.e. publish a research compendium.
-The instructions should start with a "blank" system to give readers an ideas what is needed to recreate your environment and execute the analysis, including expected or experienced execution times and resources.
-If your work requires specialised or bespoke hardware (HPC, specific GPUs), consider creating an exemplary (reduced) analysis that runs in regular environments.
+When you write a paper, take care to add instructions on how a reader can reproduce your work and provide all required parts, i.e. publish a research compendium.
+The instructions should start with a "blank" system to give readers an good idea about what is needed to recreate your environment and execute the analysis, including expected or experienced execution times and resources.
+If your work requires specialised or bespoke hardware (High Performance Cluster (HPC), specific GPUs), consider creating an exemplary, reduced analysis that runs in regular environments.
 
-Also ensure your code and data is properly deposited, citable and licensed, or these core parts of your work will likely never be evaluated or re-used.
-See Section "Research Compendia" for recommendations to make your reviewer's and reader's life easier.
-However, every little bit helps and you should "find what works for you" even in reproducible research [@whitaker_publishing_2017].
-It is better to come up with your own structure or solution, than providing no reproducible code or data at all.
+Also ensure your code and data are properly deposited, citable and licensed. If you don't do this, these core parts of your work will likely never be properly evaluated or re-used.
+See the section "Research Compendia", above, for recommendations and further reading on how to make your reviewers' and readers' lives easier.
 
 ## 2.2 The second pass {-}
 
@@ -177,30 +172,30 @@ It is better to come up with your own structure or solution, than providing no r
 > _Dominik Grusemann from Uni Augsburg suggests that you "note down terms you didn’t understand, or questions you may want to ask the author."_
 > _If you are acting as a paper referee, these comments will help you when you are writing your review, and to back up your review during the program committee meeting._  [@keshav_how_2016]
  
-1. _Look carefully at the figures, diagrams and other illustrations in the paper. Pay special attention to graphs. Are the axes properly labeled?_
+1. _Look carefully at the figures, diagrams and other illustrations in the paper. Pay special attention to graphs. Are the axes properly labelled?_
 _Are results shown with error bars, so that conclusions are statistically significant? Common mistakes like these will separate rushed, shoddy work from the truly excellent._ [@keshav_how_2016]
 1. _Remember to mark relevant unread references for further reading (this is a good way to learn more about the background of the paper)._ [@keshav_how_2016]
-1. Skim over data and source code files. Are they reasonably named, or do they even follow a well-defined structure (e.g. a Python package or a research compendium convention)? Do they have comments? Is there a README file and/or structured documentation for functionalities?
-1. Visit the source code repository, if available. Is it established and well maintained, or orphaned? Is there only one author or are there contributors? How responsive are they to issues? Does the repository have "stars" (i.e. public bookmarks) or forks? Are there regular releases, using semantic versioning?
-1. Follow the instructions to execute the RC's workflow and compare the outputs with the ones reported in the paper. Note down errors or warnings during execution but do not try to fix any but trivial or known problems.
-1. Check for differences in output figures. Do labels, legends etc. match?
+1. Skim over data and source code files. Are they reasonably named, or do they follow a well-defined structure (e.g. a Python package or a research compendium convention)? Do they have comments? Is there a README file and/or structured documentation for functionalities?
+1. Visit the online source code repository, if available. Is it established and well maintained, or orphaned? Is there only one author or are there contributors? How responsive are they to issues? Does the repository have signs of public recognition (i.e. GitHub "stars" and "forks")? Are there regular releases, using semantic versioning?
+1. Follow the instructions to execute the research compendium's workflow and compare the outputs with the ones reported in the paper. Note down errors or warnings during execution but do not try to fix any but trivial or known problems.
+1. Check for differences in output figures. Do labels, legends etc. match those in the paper?
 
-The listing above gives a lot of examples how to estimate the quality of a software, but we recommend to be realistic as to what to expect and careful not to judge too fast.
-The software project you evaluate might be done by a researcher under a lot of pressure and have only a single user and use case.
-It is OK not to document beyond the information required by the author, and the documentation might be provided quickly once you as an external user show interest.
-Also, no recent changes or releases can also mean the software is stable and simply works!
+The listing above gives a lot of examples how to estimate the quality of a software, but we recommend to be realistic as to what to expect and be careful not to judge too fast.
+The software project you evaluate might be done by a single researcher who is not a professional programmer, working under a lot of pressure to write code for a single use case.
+In these situations we might find low levels of code documentation, but further documentation might be quickly provided by the author once you as an external user show interest.
+Also, no recent changes or releases at a source code repository can also mean the software is stable and simply works with no problems!
 
 > _The second pass should take up to an hour for an experienced reader._ [@keshav_how_2016]
 
 This does not include the computation time of workflows in an RC.
 Use this time to complete first passes for one or several other papers.
-If the used software is familiar, you may attempt to reduce the computation time by subsetting data or simplifying the workflow.
-As an author, consider adding a reduced example to your RC for easier access by readers.
+If the software used is familiar, you may attempt to reduce the computation time by sub-setting data or simplifying the workflow.
+As an author, consider adding a reduced example to your research compendium for easier access by readers.
 
-You may do quick or obvious fixes that prohibit a successful workflow execution, like fixing a path or install an undocumented dependency.
-However we do recommend not to dive too deep - it is the author's responsibility to guide you through her work.
+You may do quick or obvious fixes that prohibit a successful workflow execution, like fixing a path or installing an undocumented dependency.
+However we do recommend not to dive too deep - it is the author's responsibility to guide you through their work.
 You may also face unsolvable problems, like access to specific infrastructure.
-But you should report issues, for example in the software's public code repository, if available.
+But if you encounter issues or have questions, you should communicate these to the authors, for example in the software's public code repository, if available. It is important to do this respectfully, and give the authors a chance to fix bugs or respond to issues [@Kahneman2014]. 
 
 > _After this pass, you should be able to grasp the content of the paper._ [@keshav_how_2016]
 
@@ -214,8 +209,8 @@ At this point you should be able to judge whether you might want to re-use parts
 > _Or the authors may use a proof or experimental technique that you don’t understand, so that the bulk of the paper is incomprehensible._
 > _The paper may be poorly written with unsubstantiated assertions and numerous forward references._ [@keshav_how_2016]
 
-The RC may have incomplete documentation, rely on unavailable (e.g. proprietary) software or (e.g. sensitive) data, or require infrastructure not available to you.
-It may use a programming language or programming paradigms unknown to you.
+The research compendium may have incomplete documentation, rely on unavailable software (e.g. proprietary) or data (e.g. sensitive), or require infrastructure not available to you (e.g. a HPC).
+It may use a programming language or programming paradigms unfamiliar to you.
 
 > _Or it could just be that it’s late at night and you’re tired._
 > _You can now choose to: (a) set the paper aside, hoping you don’t need to understand the material to be successful in your career, (b) return to the paper later, perhaps after reading background material or (c) persevere and go on to the third pass._ [@keshav_how_2016]
@@ -227,7 +222,7 @@ It may use a programming language or programming paradigms unknown to you.
 > _By comparing this re-creation with the actual paper, you can easily identify not only a paper’s innovations, but also its hidden failings and assumptions._
 > _This pass requires great attention to detail._ [@keshav_how_2016]
 
-If a best practice for structuring data and code was followed, familiarise yourself with it now.
+If a best practice or established convention for structuring data and code was followed, familiarise yourself with it now.
 
 > _You should identify and challenge every assumption in every statement._
 > _Moreover, you should think about how you yourself would present a particular idea._
@@ -235,26 +230,26 @@ If a best practice for structuring data and code was followed, familiarise yours
 
 Take a close look at data, metadata, and code.
 This can be a time consuming very close study of the materials.
-If data is not publicly available, e.g. because it may contain identifying information about humans, decide if you have a reasonable request to contact the original authors and ask for data access.
-Work though the examples and analysis scripts included in the RC.
+If data is not publicly available, e.g. because it may contains information about human subjects, decide if you have a reasonable request to contact the original authors and ask for data access.
+Work though the examples and analysis scripts included in the research compendium.
 Play close attention not only to code, but also to code comments as they should include helpful information.
-A good entry point for your code read may be a "main" script (if provided by the author) or literate programming document.
-If that is not given then start with the code creating the figures for the article (e.g. look for "`plot`" statements in the code) and trace your way back through the code until you reach a statement where the input data is read.
-Your impression on the code may support or refute your impression of the quality of the article's text.
+A good entry point for your code read may be a "main" script (if provided by the author), makefile, or literate programming document (i.e. R Markdown file).
+If neither of these are available, then start with the code creating the figures for the article (e.g. look for "`plot`" statements in the code) and trace your way back through the code until you reach a statement where the input data is read.
+Your impression of the code can help to inform impression of the quality of the article's text.
 
-If you did not succeed before but the work is relevant for you, spend more time on getting the analysis to run on your computer and do not hesitate to contact the author of the paper of authors of used software.
-For them it is a great experience to be contacted by an interested reader!
+If you did not succeed before but the work is relevant for you, spend more time on getting the analysis to run on your computer and do not hesitate to contact the author of the paper or authors of the software for help.
+For them it is a great experience to be contacted by an interested and respectful reader!
 
-With respect to the analysis, you may re-implement core parts or the full workflow with a different software.
-For example using a tool one you know but which was not used in the RC.
+With regard to the analysis, you may re-implement core parts or the full workflow with a different software.
+For example, using a tool one you know but which was not used in the research compendium.
 Does your code lead to the same results, or does it give different ones?
 Can the differences be explained or are they not significant?
-Note that such a replication is of very high value for scholarly publishing and you should share your results with the RC's authors and also with the scientific community.
-Depending on the efforts you put in, write a blog post or even publish a replication ~~paper~~ research compendium for one or more evaluated RCs.
+Note that such a replication is of very high value for scholarly publishing and you should share your results with the research compendium's authors and also with the scientific community.
+Depending on the efforts you put in, write a blog post or even publish a replication ~~paper~~ research compendium for one or more evaluated research compendia.
 
 If a full replication is not feasible, explore the assumptions you challenge with data and code.
 Play around with input parameters to get a feel for the changing results.
-Create explorative plots for the data as if you would want to analyse it, without the knowledge of the existing workflow.
+Create exploratory plots for the data as if you would want to analyse it, without the knowledge of the existing workflow.
 With your understanding of the code now you can also extend the application to a new problem or different dataset.
 This deep evaluation of code and data increases your understanding of the author's reasoning and decisions, and may lead to new questions.
 
@@ -277,21 +272,21 @@ You should most certainly have improved your programming skills by reading and e
 > _Here is how you can use the three-pass approach to help._
 > _First, use an academic search engine such as Google Scholar or CiteSeer and some well-chosen keywords to find three to five recent highly-cited papers in the area. [@keshav_how_2016]
 
-No search capability comparable to scientific articles exists for RC, though you can of course use generic and academic search engines. More and more journals encourage reproducible research and software and data publication, so that extending your search regular search with keywords such as "reproduction", "reproducible", "open data/software/code" may give improve your results.
+No search capability comparable to scientific articles exists for research compendia, though you can of course use generic and academic search engines. More and more journals encourage reproducible research and software and data publication, so that extending your search regular search with keywords such as "reproduction", "reproducible", "open data/software/code" may give improve your results.
 
-In addition, you can search online platforms where RC may be published and tagged as an RC (`research-compendium`):
+In addition, you can search online platforms where research compendia have been published and tagged as a research compendia (`research-compendium`):
 
 - GitHub label: https://github.com/topics/research-compendium
 - Zenodo community: https://zenodo.org/communities/research-compendium
 
-There is no journal specifically for research compendia yet, but the following ones feature reproducibility, computational studies, or openness in some way and can be a starting point if they fit your topic:
+There is no journal specifically for research compendia yet, but the following ones feature reproducibility, computational studies, or openness in some way and can be a starting point for searching for research compendia, if they fit your topic:
 
 - _ReScience_: https://rescience.github.io/
 - _Information Systems_ has a reproducibility editor and special track for invited reproducibility papers: https://www.journals.elsevier.com/information-systems/
 
-A lateral approach takes advantage of the parts of a RC.
+A lateral approach takes advantage of the parts of a research compendium.
 If you work with a specific software (tool, extension package, library) or data, find out the recommended way to cite it (and follow it yourself).
-Most scientific software provides this information in their FAQ or might have a build in function to generate a citation, and scientific data is often accompanied by a "data paper" or published in repositories with citeable identifiers.
+Most scientific software provides this information in their FAQ or might have a built-in function to generate a citation, and scientific data is often accompanied by a "data paper" or published in repositories with citeable identifiers.
 
 Then search for recent papers which cite the core software or data of interest.
 
@@ -309,7 +304,7 @@ You can also find shared software or data and use them as a seed for a next iter
 > _That will help you identify the top conferences in that field because the best researchers usually publish in the top conferences._
 
 Also check where they publish their code and data.
-It will give you an idea where this community interacts online and even lead you to RC under development.
+It will give you an idea where this community interacts online and even lead you to research compendia under development.
 
 > _The third step is to go to the website for these top conferences and look through their recent proceedings._
 > _A quick scan will usually identify recent high-quality related work._
@@ -336,7 +331,7 @@ If you are reviewing a research compendium, a more detailed checklist is given i
 
 [//]: # (maybe add https://www.bmj.com/about-bmj/resources-readers/publications/how-read-paper)
 
-# 5. Acknowledgments {-}
+# 5. Acknowledgements {-}
 
 > _The first version of this document was drafted by my students: Hossein Falaki, Earl Oliver, and Sumair Ur Rahman._
 > _My thanks to them._ 
