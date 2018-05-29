@@ -274,7 +274,7 @@ You should most certainly have improved your programming skills by reading and e
 
 No search capability comparable to scientific articles exists for research compendia, though you can of course use generic and academic search engines. More and more journals encourage reproducible research and software and data publication, so that extending your search regular search with keywords such as "reproduction", "reproducible", "open data/software/code" may give improve your results.
 
-In addition, you can search online platforms where research compendia have been published and tagged as a research compendia (`research-compendium`):
+In addition, you can search online platforms where research compendia have been published and tagged as a research compendium (`research-compendium`):
 
 - GitHub label: https://github.com/topics/research-compendium
 - Zenodo community: https://zenodo.org/communities/research-compendium
