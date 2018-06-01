@@ -94,8 +94,10 @@ Section 3 extends "Doing a Literature Survey" with aspects relevant reviewing ma
 The term _research compendium_ was coined by @gentleman_statistical_2007 who "introduce[d] the concept of a compendium as both a container for the different elements that make up the document and its computations (i.e. text, code, data,...), and as a means for distributing, managing and updating the collection."
 According to [@marwick_packaging_2018] it provides "a standard and easily recognisable way for organising the digital materials of a research project to enable other researchers to inspect, reproduce, and extend the research".
 This standard may differ between scientific domains, yet the intentions and benefits are the same.
-Research compendia improve transparency and quality of research [REF], enable enhanced review and publication workflows [@nust_opening_2017], and answer readers' needs to understand complex analyses [@konkol_-depth_2018].
+Research compendia are practised Open Science culture and as such improve transparency [@nosek_promoting_2015], "make more published research true" [@ioannidis_how_2014], and enable enhanced review and publication workflows [@nust_opening_2017].
+They answer readers' needs to understand complex analyses through inspection and manipulation [@konkol_-depth_2018] and enable other researchers to reproduce and extend the research [@marwick_packaging_2018].
 Research compendia improve citations since code and data are openly available [@vandevalle_code_2012].
+Infrastructure to support scientific publication and collaboration based on research compendia is and active field of research [@stodden_researchcompendia.org:_2015,@nust_opening_2017,@green_computational_2018].
 Ultimately, their goal is to improve reproducibility (see @barba_terminologies_2018 for definitions of terms) in the light of claims of a "reproducibility crisis" in several fields.
 
 As this article is focused on providing hands-on guidance on using, and to some extend also creating, research compendia, we refer the reader to the references for more specific details.
