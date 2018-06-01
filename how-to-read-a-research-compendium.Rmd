@@ -199,7 +199,7 @@ As an author, consider adding a reduced example to your research compendium for 
 You may do quick or obvious fixes that prohibit a successful workflow execution, like fixing a path or installing an undocumented dependency.
 However we do recommend not to dive too deep - it is the author's responsibility to guide you through their work.
 You may also face unsolvable problems, like access to specific infrastructure.
-But if you encounter issues or have questions, you should communicate these to the authors, for example in the software's public code repository, if available. It is important to do this respectfully, and give the authors a chance to fix bugs or respond to issues [@Kahneman2014]. 
+But if you encounter issues or have questions, you should communicate these to the authors, for example in the software's public code repository, if available. It is important to do this respectfully, and give the authors a chance to fix bugs or respond to issues [@kahneman_new_2014]. 
 
 > _After this pass, you should be able to grasp the content of the paper._ [@keshav_how_2016]
 
