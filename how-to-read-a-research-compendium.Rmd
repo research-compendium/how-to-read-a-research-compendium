@@ -105,16 +105,15 @@ Text can be instructions, software documentation, or a full manuscript.
 Code can be scripts, software packages, specifications of dependencies and computational environments, or even virtual machines.
 Data can be just about anything, but probably comprises plain text or binary files that are used as input to the workflow, and produced as output from executing the workflow.
 
-For _authors_, there is a wealth of generic recommendations guiding researchers in creating open research software [@sandve_ten_2013,@taschuk_ten_2017,@prlic_ten_2012,@stodden_best_2014,@wilson_good_2017].
-When a research compendium is published, we assume the author has the intention to help the reader understanding the work and accepts there are "no excuses" to not publishing your code [@barnes_publish_2010].
+For _authors_, there is a wealth of generic recommendations guiding researchers in creating open research (software) [@sandve_ten_2013,@taschuk_ten_2017,@prlic_ten_2012,@stodden_best_2014,@wilson_good_2017].
+When a research compendium is published, one must assume the author has the intention to help the reader understanding the work and accepts there are "no excuses" to not publishing your code [@barnes_publish_2010].
 An author may attempt to reach the ideal of having one "main" file that can be executed with "one-click" [@pebesma_earth_2013], enabling re-use with proper licensing [@stodden_legal_2009], and interweaving code and text following the literate programming paradigm [@knuth_literate_1984].
 The following conventions are specifically for research compendia:
 
-- @marwick_packaging_2018 discuss the structure and tooling of the R programming language and software engineering tools for a variety of disciplines with real-world examples, including several templates for R
-- https://github.com/ropensci/rrrpkg
-- popper: http://falsifiable.us/ and @jimenez_popper_2017
-- R and Python packages [@gentleman_statistical_2007], also npm packages?
-- Researchcompendia.org [@stodden_researchcompendia.org:_2015]
+- @marwick_packaging_2018 and [ROpenSci community's `rrrpkg`](https://github.com/ropensci/rrrpkg) discuss the standards and tooling of the R programming language and software engineering tools for a variety of disciplines with real-world examples, including several templates for R
+- @jimenez_popper_2017 apply software engineering best-pratices from the Open Source software domain to research, see also http://falsifiable.us/
+- @konkol_state_2018 derive recommendations for authors from issues encountered reproducing computational papers in geosciences
+- @gentleman_statistical_2007 recommend using a programming languages packaging mechanism for research compendia, more specifically R and Python packages
 
 # 2. The three-pass approach {-}
 
