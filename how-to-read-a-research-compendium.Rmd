@@ -237,7 +237,7 @@ This can be a time consuming very close study of the materials.
 If data is not publicly available, e.g. because it contains information about human subjects, decide if you have a reasonable request to contact the original authors and ask for data access.
 Work though the examples and analysis scripts included in the research compendium.
 Play close attention not only to code, but also to code comments as they should include helpful information.
-A good entry point for your code read may be a "main" script (if provided by the author), makefile, or literate programming document (i.e. R Markdown file).
+A good entry point for your code read may be a "main" script (if provided by the author), makefile, or literate programming document (e.g. an R Markdown file or Jupyter Notebook).
 If neither of these are available, then start with the code creating the figures for the article (e.g. look for "`plot`" statements in the code) and trace your way back through the code until you reach a statement where the input data is read.
 Your impression of the code can help to inform your impression of the quality of the article's text.
 
