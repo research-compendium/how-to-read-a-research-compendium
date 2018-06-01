@@ -6,12 +6,17 @@ author:
     affiliation: 1
     corresponding: true
     email: daniel.nuest@uni-muenster.de
+  - name: Ben Marwick
+    affiliation: 2
+    email: bmarwick@uw.edu
   #- name: Srinivasan Keshav
   #  affiliation: 2
   #  email: keshav@uwaterloo.ca
 affiliation:
   - code: 1
     address: Institute for Geoinformatics, University of Münster, Münster, Germany
+  - code: 2
+    address: Department of Anthropology, University of Washington, Seattle, Washington, United States
   #- code: 2
   #  address: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, ON, Canada
 abstract: >
@@ -91,7 +96,7 @@ According to [@marwick_packaging_2018] it provides "a standard and easily recogn
 This standard may differ between scientific domains, yet the intentions and benefits are the same.
 Research compendia improve transparency and quality of research [REF], enable enhanced review and publication workflows [@nust_opening_2017], and answer readers' needs to understand complex analyses [@konkol_-depth_2018].
 Research compendia improve citations since code and data are openly available [@vandevalle_code_2012].
-Ultimately, their goal is to improve reproducibility (see @barba_terminologies_2018 for definitions of terms) in the light of claims a "reproducibility crisis" in several fields.
+Ultimately, their goal is to improve reproducibility (see @barba_terminologies_2018 for definitions of terms) in the light of claims of a "reproducibility crisis" in several fields.
 
 As this article is focused on providing hands-on guidance on using, and to some extend also creating, research compendia, we refer the reader to the references for more specific details.
 For the remainder of this work, we assume a minimal view of a research compendium suitable for _readers_ (for a more detailed discussion see @marwick_packaging_2018, @gentleman_statistical_2007) who examine a research compendium manually.
@@ -113,7 +118,7 @@ The following conventions are specifically for research compendia:
 
 # 2. The three-pass approach {-}
 
-> _The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and ploughing your way to the end._
+> _The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end._
 > _Each pass accomplishes specific goals and builds upon the previous pass:_
 > _The first pass gives you a general idea about the paper._ 
 > _The second pass lets you grasp the paper’s content, but not its details._ 
@@ -230,12 +235,12 @@ If a best practice or established convention for structuring data and code was f
 
 Take a close look at data, metadata, and code.
 This can be a time consuming very close study of the materials.
-If data is not publicly available, e.g. because it may contains information about human subjects, decide if you have a reasonable request to contact the original authors and ask for data access.
+If data is not publicly available, e.g. because it contains information about human subjects, decide if you have a reasonable request to contact the original authors and ask for data access.
 Work though the examples and analysis scripts included in the research compendium.
 Play close attention not only to code, but also to code comments as they should include helpful information.
 A good entry point for your code read may be a "main" script (if provided by the author), makefile, or literate programming document (i.e. R Markdown file).
 If neither of these are available, then start with the code creating the figures for the article (e.g. look for "`plot`" statements in the code) and trace your way back through the code until you reach a statement where the input data is read.
-Your impression of the code can help to inform impression of the quality of the article's text.
+Your impression of the code can help to inform your impression of the quality of the article's text.
 
 If you did not succeed before but the work is relevant for you, spend more time on getting the analysis to run on your computer and do not hesitate to contact the author of the paper or authors of the software for help.
 For them it is a great experience to be contacted by an interested and respectful reader!
