@@ -54,12 +54,12 @@ They comprise not only the research paper text and figures, but also all data an
 They provide a lot of added value by revealing more of the research process to readers, but, if not done well, they can increase the difficulty of understanding the research.
 To help readers better understand how to read a research compendia, we extends Keshav's three-pass method targeted at improving our skills for reading a research paper [@keshav_how_2007] with additional steps relevant to a research compendium's content.
 
-Unlike the first version of the original [@keshav_how_2007], we cannot draw from a long history of experience because  research compendia have been relatively rare until recently.
+Unlike the first version of the original [@keshav_how_2007], we cannot draw from a long history of experience because research compendia have been relatively rare until recently.
 Our intention here is to provide guidance at the outset of an emerging practice to both authors and readers of research compendia to help them understand each others' perspectives and needs.
 Authors can use this guide to improve their research compendium's structure and content, to better anticipate readers' needs when creating the compendium.
 Readers can avoid the trap of falling too deep into technological challenges by an iterative reading approach that allocates attention to the scientific issues.
 We also hope to improve the interaction between authors and mitigate unwarranted concerns, like providing support [@barnes_publish_2010]. 
-Ultimately  research compendia can enhance and deepen the reading experience, if done right.
+Ultimately research compendia can enhance and deepen the reading experience, if done right.
 Keshav's following introduction applies directly to research compendia:
 
 > _Researchers must read papers for several reasons:_
@@ -67,8 +67,8 @@ Keshav's following introduction applies directly to research compendia:
 > _A typical researcher will likely spend hundreds of hours every year reading papers._
 > 
 > _Learning to efficiently read a paper is a critical but rarely taught skill._
-> _Beginning graduate students, therefore, must learn  on  their  own  using  trial  and  error._
-> _Students  waste much effort in the process and are frequently driven to frustration._
+> _Beginning graduate students, therefore, must learn on their own using trial and error._
+> _Students waste much effort in the process and are frequently driven to frustration._
 > 
 > _For many years I have used a simple ‘three-pass’ approach to prevent me from drowning in the details of a paper before getting a bird’s-eye-view._
 > _It allows me to estimate the amount of time required to review a set of papers._
@@ -76,7 +76,7 @@ Keshav's following introduction applies directly to research compendia:
 > _This paper describes the approach and its use in doing a literature survey._ [@keshav_how_2016]
 
 The additions made in this work to accommodate for the content in a research compendium are quite extensive.
-At first glance this is naturally due to the complexity that an interactive compendium has compared to a  classic static "paper".
+At first glance this is naturally due to the complexity that an interactive compendium has compared to a classic static "paper".
 A research compendium goes well beyond the "mere advertising of the scholarship" [@claerbout_seventeen_1994].
 Therefore we see the breadth of additions as a sign of potential, namely for unprecedented openness and collaboration.
 
@@ -91,7 +91,7 @@ Section 3 extends "Doing a Literature Survey" with aspects relevant reviewing ma
 
 ### 1.3 Research compendia {-}
 
-The term _research compendium_ was  coined by @gentleman_statistical_2007 who "introduce[d] the concept of a compendium as both a container for the different elements that make up the document and its computations (i.e. text, code, data,...), and as a means for distributing, managing and updating the collection."
+The term _research compendium_ was coined by @gentleman_statistical_2007 who "introduce[d] the concept of a compendium as both a container for the different elements that make up the document and its computations (i.e. text, code, data,...), and as a means for distributing, managing and updating the collection."
 According to [@marwick_packaging_2018] it provides "a standard and easily recognisable way for organising the digital materials of a research project to enable other researchers to inspect, reproduce, and extend the research".
 This standard may differ between scientific domains, yet the intentions and benefits are the same.
 Research compendia improve transparency and quality of research [REF], enable enhanced review and publication workflows [@nust_opening_2017], and answer readers' needs to understand complex analyses [@konkol_-depth_2018].
@@ -175,7 +175,7 @@ See the section "Research Compendia", above, for recommendations and further rea
 > _In the second pass, read the paper with greater care, but ignore details such as proofs._
 > _It helps to jot down the key points, or to make comments in the margins, as you read._
 > _Dominik Grusemann from Uni Augsburg suggests that you "note down terms you didn’t understand, or questions you may want to ask the author."_
-> _If you are acting as a paper referee, these comments will help you when you are writing your review, and to back up your review during the program committee meeting._  [@keshav_how_2016]
+> _If you are acting as a paper referee, these comments will help you when you are writing your review, and to back up your review during the program committee meeting._ [@keshav_how_2016]
  
 1. _Look carefully at the figures, diagrams and other illustrations in the paper. Pay special attention to graphs. Are the axes properly labelled?_
 _Are results shown with error bars, so that conclusions are statistically significant? Common mistakes like these will separate rushed, shoddy work from the truly excellent._ [@keshav_how_2016]
@@ -299,7 +299,7 @@ Then search for recent papers which cite the core software or data of interest.
 > _You will find a thumbnail summary of the recent work, and perhaps, if you are lucky, a pointer to a recent survey paper._
 > _If you can find such a survey, you are done._
 > _Read the survey, congratulating yourself on your good luck._
-> _Otherwise,  in the second step,  find shared citations and repeated author names in the bibliography._
+> _Otherwise, in the second step, find shared citations and repeated author names in the bibliography._
 > _These are the key papers and researchers in that area._
 
 You can also find shared software or data and use them as a seed for a next iteration.
@@ -343,7 +343,7 @@ If you are reviewing a research compendium, a more detailed checklist is given i
 > _I also benefited from Christophe Diot’s perceptive comments and Nicole Keshav’s eagle-eyed copy-editing._
 > _I would like to make this a living document, updating it as I receive comments._
 > _Please take a moment to email me any comments or suggestions for improvement._
-> _Thanks to encouraging  feedback  from  many  correspondents over the years._ [@keshav_how_2016]
+> _Thanks to encouraging feedback from many correspondents over the years._ [@keshav_how_2016]
 
 In the spirit of the original paper, we would like to make this a living document and invite readers to provide comments or suggestions for improvement via email, as part of this preprint, or on the GitHub repository: [https://github.com/nuest/how-to-read-a-research-compendium](https://github.com/nuest/how-to-read-a-research-compendium).
 The repository also includes open questions and is where the paper's authors openly discuss.
