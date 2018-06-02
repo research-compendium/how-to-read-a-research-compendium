@@ -2,23 +2,25 @@
 title: How to Read a Research Compendium
 preprint: true
 author: 
-  - name: Daniel Nüst
-    affiliation: 1
-    corresponding: true
-    email: daniel.nuest@uni-muenster.de
-  - name: Ben Marwick
-    affiliation: 2
-    email: bmarwick@uw.edu
+  - Daniel Nüst, Institute for Geoinformatics, University of Münster, Münster, Germany (daniel.nuest@uni-muenster.de)
+    #name: Daniel Nüst
+    #affiliation: 1
+    #corresponding: true
+    #email: daniel.nuest@uni-muenster.de
+  - Ben Marwick, Department of Anthropology, University of Washington, Seattle, Washington, United States (bmarwick@uw.edu)
+    #name: Ben Marwick
+    #affiliation: 2
+    #email: bmarwick@uw.edu
   #- name: Srinivasan Keshav
   #  affiliation: 2
   #  email: keshav@uwaterloo.ca
-affiliation:
-  - code: 1
-    address: Institute for Geoinformatics, University of Münster, Münster, Germany
-  - code: 2
-    address: Department of Anthropology, University of Washington, Seattle, Washington, United States
-  #- code: 2
-  #  address: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, ON, Canada
+#affiliation:
+#  - code: 1
+#    address: Institute for Geoinformatics, University of Münster, Münster, Germany
+#  - code: 2
+#    address: Department of Anthropology, University of Washington, Seattle, Washington, United States
+#  - code: 2
+#    address: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, ON, Canada
 abstract: >
   Researchers spend a great deal of time reading research papers.
   Keshav (2012) provides a three-pass method to researchers to improve their reading skills.
@@ -27,19 +29,30 @@ abstract: >
   We list the existing conventions for RC and suggest how to utilise their shared properties in a structured reading process.
   Unlike the original, this article is not build upon a long history but intends to provide guidance at the outset of an emerging practice.
 header-includes: >
-  \hypersetup{
-    colorlinks,
-    linkcolor={blue!50!black},
-    citecolor={blue!50!black},
-    urlcolor={blue!80!black}
-  }
-  \usepackage[normalem]{ulem}
+  \pdfoutput=1
+  \setlength{\columnsep}{18pt}
+  \usepackage{url}
+  \usepackage{breakurl}
+  \PassOptionsToPackage{hyperindex,breaklinks}{hyperref}
+#  \hypersetup{
+#    colorlinks,
+#    linkcolor={blue!50!black},
+#    citecolor={blue!50!black},
+#    urlcolor={blue!80!black}
+#  }
+#  \usepackage[normalem]{ulem}
 bibliography: bibliography.bib
 output:
-  rticles::peerj_article:
-    base_format: rmarkdown::pdf_document # bookdown::pdf_document2 # for using \@ref()
-    keep_tex: yes
-    number_sections: yes
+  #rticles::peerj_article:
+  #  base_format: rmarkdown::pdf_document # bookdown::pdf_document2 # for using \@ref()
+  #  keep_tex: yes
+  #  number_sections: yes
+  pdf_document: 
+    fig_caption: true
+    keep_tex: true
+    pandoc_args: [
+      "-V", "classoption=twocolumn"
+    ]
 ---
 
 <!-- Citations: @Figueredo:2009dg, citep: [@Figueredo:2009dg], multiple citep: [@Figueredo:2009dg; @other_2018] -->
@@ -117,6 +130,7 @@ The following conventions are specifically for research compendia:
 - @konkol_state_2018 derive recommendations for authors from issues encountered reproducing computational papers in geosciences
 - @gentleman_statistical_2007 recommend using a programming languages packaging mechanism for research compendia, more specifically R and Python packages
 
+\newpage
 # 2. The three-pass approach {-}
 
 > _The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end._
