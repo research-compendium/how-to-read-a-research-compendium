@@ -29,7 +29,6 @@ abstract: >
   We list the existing conventions for RC and suggest how to utilise their shared properties in a structured reading process.
   Unlike the original, this article is not build upon a long history but intends to provide guidance at the outset of an emerging practice.
 header-includes: >
-  \pdfoutput=1
   \setlength{\columnsep}{18pt}
   \usepackage{url}
   \usepackage{breakurl}
@@ -125,8 +124,8 @@ When a research compendium is published, one must assume the author has the inte
 An author may attempt to reach the ideal of having one "main" file that can be executed with "one-click" [@pebesma_earth_2013], enabling re-use with proper licensing [@stodden_legal_2009], and interweaving code and text following the literate programming paradigm [@knuth_literate_1984].
 The following conventions are specifically for research compendia:
 
-- @marwick_packaging_2018 and [ROpenSci community's `rrrpkg`](https://github.com/ropensci/rrrpkg) discuss the standards and tooling of the R programming language and software engineering tools for a variety of disciplines with real-world examples, including several templates for R
-- @jimenez_popper_2017 apply software engineering best-pratices from the Open Source software domain to research, see also http://falsifiable.us/
+- @marwick_packaging_2018 and ROpenSci community's `rrrpkg` ([https://github.com/ropensci/rrrpkg](https://github.com/ropensci/rrrpkg)) discuss the standards and tooling of the R programming language and software engineering tools for a variety of disciplines with real-world examples, including several templates for R
+- @jimenez_popper_2017 apply software engineering best-pratices from the Open Source software domain to research (see also [http://falsifiable.us/](http://falsifiable.us/)).
 - @konkol_state_2018 derive recommendations for authors from issues encountered reproducing computational papers in geosciences
 - @gentleman_statistical_2007 recommend using a programming languages packaging mechanism for research compendia, more specifically R and Python packages
 
@@ -296,13 +295,13 @@ No search capability comparable to scientific articles exists for research compe
 
 In addition, you can search online platforms where research compendia have been published and tagged as a research compendium (`research-compendium`):
 
-- GitHub&nbsp;label: https://github.com/topics/research-compendium
-- Zenodo&nbsp;community: https://zenodo.org/communities/research-compendium
+- GitHub&nbsp;label: [https://github.com/topics/research-compendium](https://github.com/topics/research-compendium)
+- Zenodo&nbsp;community: [https://zenodo.org/communities/research-compendium](https://zenodo.org/communities/research-compendium)
 
 There is no journal specifically for research compendia yet, but the following ones feature reproducibility, computational studies, or openness in some way and can be a starting point for searching for research compendia, if they fit your topic:
 
-- _ReScience_: https://rescience.github.io/
-- _Information&nbsp;Systems_ has a reproducibility editor and special track for invited reproducibility papers: https://www.journals.elsevier.com/information-systems/
+- _ReScience_: [https://rescience.github.io/](https://rescience.github.io/)
+- _Information&nbsp;Systems_ has a reproducibility editor and special track for invited reproducibility papers: [https://www.journals.elsevier.com/information-systems/](https://www.journals.elsevier.com/information-systems/)
 
 A lateral approach takes advantage of the parts of a research compendium.
 If you work with a specific software (tool, extension package, library) or data, find out the recommended way to cite it (and follow it yourself).
@@ -342,7 +341,7 @@ If a majority cites or uses a key software, technology, or dataset, evaluate it.
 > _Iain H. McLean of Psychology, Inc. has put together a downloadable 'review matrix' that simplifies paper reviewing using the three-pass approach for papers in experimental psychology [@mclean_literature_2012], which can probably be used, with minor modifications, for papers in other areas._ [@keshav_how_2016]
 
 We are working on an extended version of this matrix to provide space for notes about software, data, results of the reproduction, and application of the methods.
-See the corresponding repository issue for details and provide your feedback: https://github.com/nuest/how-to-read-a-research-compendium/issues/2
+See the corresponding repository issue for details and provide your feedback: [https://github.com/nuest/how-to-read-a-research-compendium/issues/2](https://github.com/nuest/how-to-read-a-research-compendium/issues/2)
 
 Infrastructures supporting the creating and inspection of research compendia is an active field of research, but none of which have been widely deployed yet (@nust_opening_2017; @brinckman_computing_2018; @stodden_researchcompendia.org:_2015; @kluyver_jupyter_2016).
 
