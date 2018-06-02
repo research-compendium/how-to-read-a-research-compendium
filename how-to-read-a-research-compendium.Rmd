@@ -264,7 +264,7 @@ For example, using a tool one you know but which was not used in the research co
 Does your code lead to the same results, or does it give different ones?
 Can the differences be explained or are they not significant?
 Note that such a replication is of very high value for scholarly publishing and you should share your results with the research compendium's authors and also with the scientific community.
-Depending on the efforts you put in, write a blog post or even publish a replication ~~paper~~ research compendium for one or more evaluated research compendia.
+Depending on the efforts you put in, write a blog post or even publish a replication research compendium for one or more evaluated research compendia.
 
 If a full replication is not feasible, explore the assumptions you challenge with data and code.
 Play around with input parameters to get a feel for the changing results.
