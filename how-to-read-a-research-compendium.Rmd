@@ -20,7 +20,7 @@ affiliation:
   #- code: 2
   #  address: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, ON, Canada
 abstract: >
-  _Researchers spend a great deal of time reading research papers._
+  Researchers spend a great deal of time reading research papers.
   Keshav (2012) provides a three-pass method to researchers to improve their reading skills.
   This article extends Keshav's method to work for research compendia (RC).
   RC are an increasingly used form of publication packaging not only the research paper text and figures, but also all data and software used to conduct the computational workflow and create all outputs.
@@ -42,7 +42,7 @@ output:
     number_sections: yes
 ---
 
-<!-- Citations: @Figueredo:2009dg, citep: [@Figueredo:2009dg] -->
+<!-- Citations: @Figueredo:2009dg, citep: [@Figueredo:2009dg], multiple citep: [@Figueredo:2009dg; @other_2018] -->
 <!-- add " {-}" after headings to remove numbering -->
 
 # 1. Introduction {-}
@@ -97,7 +97,7 @@ This standard may differ between scientific domains, yet the intentions and bene
 Research compendia are practised Open Science culture and as such improve transparency [@nosek_promoting_2015], "make more published research true" [@ioannidis_how_2014], and enable enhanced review and publication workflows [@nust_opening_2017].
 They answer readers' needs to understand complex analyses through inspection and manipulation [@konkol_-depth_2018] and enable other researchers to reproduce and extend the research [@marwick_packaging_2018].
 Research compendia improve citations since code and data are openly available [@vandevalle_code_2012].
-Infrastructure to support scientific publication and collaboration based on research compendia is and active field of research [@stodden_researchcompendia.org:_2015,@nust_opening_2017,@green_computational_2018].
+Infrastructure to support scientific publication and collaboration based on research compendia is and active field of research [@stodden_researchcompendia.org:_2015; @nust_opening_2017; @green_computational_2018].
 Ultimately, their goal is to improve reproducibility (see @barba_terminologies_2018 for definitions of terms) in the light of claims of a "reproducibility crisis" in several fields.
 
 As this article is focused on providing hands-on guidance on using, and to some extend also creating, research compendia, we refer the reader to the references for more specific details.
@@ -107,7 +107,7 @@ Text can be instructions, software documentation, or a full manuscript.
 Code can be scripts, software packages, specifications of dependencies and computational environments, or even virtual machines.
 Data can be just about anything, but probably comprises plain text or binary files that are used as input to the workflow, and produced as output from executing the workflow.
 
-For _authors_, there is a wealth of generic recommendations guiding researchers in creating open research (software) [@sandve_ten_2013,@taschuk_ten_2017,@prlic_ten_2012,@stodden_best_2014,@wilson_good_2017].
+For _authors_, there is a wealth of generic recommendations guiding researchers in creating open research (software) [@sandve_ten_2013; @taschuk_ten_2017; @prlic_ten_2012; @stodden_best_2014; @wilson_good_2017].
 When a research compendium is published, one must assume the author has the intention to help the reader understanding the work and accepts there are "no excuses" to not publishing your code [@barnes_publish_2010].
 An author may attempt to reach the ideal of having one "main" file that can be executed with "one-click" [@pebesma_earth_2013], enabling re-use with proper licensing [@stodden_legal_2009], and interweaving code and text following the literate programming paradigm [@knuth_literate_1984].
 The following conventions are specifically for research compendia:
@@ -162,7 +162,7 @@ After the first pass, you should be able to judge if the software is useful, if 
 > _Incidentally, when you write a paper, you can expect most reviewers (and readers) to make only one pass over it._
 > _Take care to choose coherent section and sub-section titles and to write concise and comprehensive abstracts._
 > _If a reviewer cannot understand the gist after one pass, the paper will likely be rejected; if a reader cannot understand the highlights of the paper after five minutes, the paper will likely never be read._
-> For these reasons, a ‘graphical abstract’ that summarizes a paper with a single well-chosen figure is an excellent idea and can be increasingly found in scientific journals._ [@keshav_how_2016]
+> _For these reasons, a 'graphical abstract' that summarizes a paper with a single well-chosen figure is an excellent idea and can be increasingly found in scientific journals._ [@keshav_how_2016]
 
 When you write a paper, take care to add instructions on how a reader can reproduce your work and provide all required parts, i.e. publish a research compendium.
 The instructions should start with a "blank" system to give readers an good idea about what is needed to recreate your environment and execute the analysis, including expected or experienced execution times and resources.
@@ -282,13 +282,13 @@ No search capability comparable to scientific articles exists for research compe
 
 In addition, you can search online platforms where research compendia have been published and tagged as a research compendium (`research-compendium`):
 
-- GitHub label: https://github.com/topics/research-compendium
-- Zenodo community: https://zenodo.org/communities/research-compendium
+- GitHub&nbsp;label: https://github.com/topics/research-compendium
+- Zenodo&nbsp;community: https://zenodo.org/communities/research-compendium
 
 There is no journal specifically for research compendia yet, but the following ones feature reproducibility, computational studies, or openness in some way and can be a starting point for searching for research compendia, if they fit your topic:
 
 - _ReScience_: https://rescience.github.io/
-- _Information Systems_ has a reproducibility editor and special track for invited reproducibility papers: https://www.journals.elsevier.com/information-systems/
+- _Information&nbsp;Systems_ has a reproducibility editor and special track for invited reproducibility papers: https://www.journals.elsevier.com/information-systems/
 
 A lateral approach takes advantage of the parts of a research compendium.
 If you work with a specific software (tool, extension package, library) or data, find out the recommended way to cite it (and follow it yourself).
@@ -330,7 +330,7 @@ If a majority cites or uses a key software, technology, or dataset, evaluate it.
 We are working on an extended version of this matrix to provide space for notes about software, data, results of the reproduction, and application of the methods.
 See the corresponding repository issue for details and provide your feedback: https://github.com/nuest/how-to-read-a-research-compendium/issues/2
 
-Infrastructures supporting the creating and inspection of research compendia is an active field of research, but none of which have been widely deployed yet (@nust_opening_2017,@brinckman_computing_2018,@stodden_researchcompendia.org:_2015,@kluyver_jupyter_2016).
+Infrastructures supporting the creating and inspection of research compendia is an active field of research, but none of which have been widely deployed yet (@nust_opening_2017; @brinckman_computing_2018; @stodden_researchcompendia.org:_2015; @kluyver_jupyter_2016).
 
 If you are reviewing a research compendium, a more detailed checklist is given in the "rOpenSci Analysis Best Pratice Guidelines" [@ropensci_ropensci_2017], which are partially even automated for R-based research compendia [@decicco_checkers:_2018].
 
