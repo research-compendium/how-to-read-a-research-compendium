@@ -116,6 +116,7 @@ The following conventions are specifically for research compendia:
 - @jimenez_popper_2017 apply software engineering best-pratices from the Open Source software domain to research, see also http://falsifiable.us/
 - @konkol_state_2018 derive recommendations for authors from issues encountered reproducing computational papers in geosciences
 - @gentleman_statistical_2007 recommend using a programming languages packaging mechanism for research compendia, more specifically R and Python packages
+- @chirigati_reprozip:_2016 describe the tool `ReproZip` ([https://reprozip.org](https://reprozip.org)) to support capture and reproduction of a research compendium
 
 # 2. The three-pass approach {-}
 
