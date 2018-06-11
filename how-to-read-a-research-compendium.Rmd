@@ -169,12 +169,12 @@ See the section "Research Compendia", above, for recommendations and further rea
 1. _Look carefully at the figures, diagrams and other illustrations in the paper. Pay special attention to graphs. Are the axes properly labelled?_
 _Are results shown with error bars, so that conclusions are statistically significant? Common mistakes like these will separate rushed, shoddy work from the truly excellent._ [@keshav_how_2016]
 1. _Remember to mark relevant unread references for further reading (this is a good way to learn more about the background of the paper)._ [@keshav_how_2016]
-1. Skim over data and source code files. Are they reasonably named, or do they follow a well-defined structure (e.g. a Python package or a research compendium convention)? Do they have comments? Is there a README file and/or structured documentation for functionalities?
+1. Skim over data and source code files without opening them. Are they reasonably named [@bryan_naming_2015]? Do they follow a well-defined structure (e.g. a Python package or a research compendium convention)? Is there a README file and/or structured documentation for functionalities?
 1. Visit the online source code repository, if available. Is it established and well maintained, or orphaned? Is there only one author or are there contributors? How responsive are they to issues? Does the repository have signs of public recognition (i.e. GitHub "stars" and "forks")? Are there regular releases, using semantic versioning?
-1. Follow the instructions to execute the research compendium's workflow and compare the outputs with the ones reported in the paper. Note down errors or warnings during execution but do not try to fix any but trivial or known problems.
-1. Check for differences in output figures. Do labels, legends etc. match those in the paper?
+1. Follow the instructions to install the required software and execute the research compendium's workflow with the provided parameters and input or sample data. Note down errors or warnings but do not try to fix any but trivial or known problems (e.g. fixing a path or installing an undocumented dependency).
+1. Compare the outputs with the expected ones reported in the paper. Also check for differences in output figures: Do labels, legends etc. match those in the paper?
 
-The listing above gives a lot of examples how to estimate the quality of a software, but we recommend to be realistic as to what to expect and be careful not to judge too fast.
+Points 3 and 4 above hint at how to estimate the quality of a software, but we recommend to be realistic as to what to expect and be careful not to judge too fast.
 The software project you evaluate might be done by a single researcher who is not a professional programmer, working under a lot of pressure to write code for a single use case.
 In these situations we might find low levels of code documentation, but further documentation might be quickly provided by the author once you as an external user show interest.
 Also, no recent changes or releases at a source code repository can also mean the software is stable and simply works with no problems!
@@ -194,7 +194,17 @@ But if you encounter issues or have questions, you should communicate these to t
 > _After this pass, you should be able to grasp the content of the paper._ [@keshav_how_2016]
 
 You should have re-executed the provided workflow or understand why you could not.
-At this point you should be able to judge whether you might want to re-use parts of the analysis, i.e. software or data, for your own work.
+You should be able to complete the second pass even if you are unfamiliar with the actual language the software is written in or if you are not a developer yourself.
+However we do recommend not to dive too deep, i.e. not going beyond the provided instructions for the research compendium's workflow.
+At this stage, it is the author's responsibility to guide you through their work.
+
+Still, you may also face unsolvable problems, like access to specific infrastructure.
+But if you encounter issues or have questions, you should communicate these to the author, for example in the software's public code repository, if available.
+It is important to do this respectfully, and give the authors a chance to fix bugs or respond to issues [@kahneman_new_2014].
+Also let the authors know if your reproduction was successful, especially if you used a different operating system or software version than reported.
+
+At this point you should be able to judge whether the software works and if it is sustainable.
+Based on this evaluation you can decide to re-use parts of the analysis, i.e. software, data, or method, for your own work.
 
 > _You should be able to summarize the main thrust of the paper, with supporting evidence, to someone else._
 > _This level of detail is appropriate for a paper in which you are interested, but does not lie in your research speciality._
