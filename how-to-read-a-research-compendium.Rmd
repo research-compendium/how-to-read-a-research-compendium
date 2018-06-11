@@ -2,25 +2,10 @@
 title: How to Read a Research Compendium
 preprint: true
 author: 
-  - Daniel Nüst, Institute for Geoinformatics, University of Münster, Münster, Germany (daniel.nuest@uni-muenster.de)
-    #name: Daniel Nüst
-    #affiliation: 1
-    #corresponding: true
-    #email: daniel.nuest@uni-muenster.de
-  - Ben Marwick, Department of Anthropology, University of Washington, Seattle, Washington, United States (bmarwick@uw.edu)
-    #name: Ben Marwick
-    #affiliation: 2
-    #email: bmarwick@uw.edu
-  #- name: Srinivasan Keshav
-  #  affiliation: 2
-  #  email: keshav@uwaterloo.ca
-#affiliation:
-#  - code: 1
-#    address: Institute for Geoinformatics, University of Münster, Münster, Germany
-#  - code: 2
-#    address: Department of Anthropology, University of Washington, Seattle, Washington, United States
-#  - code: 2
-#    address: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, ON, Canada
+  - "Daniel Nüst, Institute for Geoinformatics, University\\ of\\ Münster, Münster,\\ Germany (daniel.nuest@uni-muenster.de)"
+  - "Carl Boettiger, Department of Environmental Science, Policy and Management, University\\ of\\ California,\\ Berkeley, Berkeley,\\ California, United\\ States (cboettig@gmail.com)"
+  - "Ben Marwick, Department of Anthropology, University\\ of\\ Washington, Seattle,\\ Washington, United\\ States (bmarwick@uw.edu)"
+#  - "Srinivasan Keshav, David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, ON, Canada (keshav@uwaterloo.ca)"
 abstract: >
   Researchers spend a great deal of time reading research papers.
   Keshav (2012) provides a three-pass method to researchers to improve their reading skills.
