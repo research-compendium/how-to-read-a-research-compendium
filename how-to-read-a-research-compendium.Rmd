@@ -1,5 +1,5 @@
 ---
-title: How to Read a Research Compendium
+title: "How to Read a Research Compendium"
 preprint: true
 author: 
   - "Daniel Nüst, Institute for Geoinformatics, University\\ of\\ Münster, Münster,\\ Germany (daniel.nuest@uni-muenster.de)"
@@ -9,28 +9,17 @@ author:
 abstract: >
   Researchers spend a great deal of time reading research papers.
   Keshav (2012) provides a three-pass method to researchers to improve their reading skills.
-  This article extends Keshav's method to work for research compendia (RC).
-  RC are an increasingly used form of publication packaging not only the research paper text and figures, but also all data and software used to conduct the computational workflow and create all outputs.
-  We list the existing conventions for RC and suggest how to utilise their shared properties in a structured reading process.
+  This article extends Keshav's method for reading a research compendium.
+  Research compendia are an increasingly used form of publication packaging not only the research paper text and figures, but also all data and software.
+  We introduce the existing conventions for research compendia and suggest how to utilise their shared properties in a structured reading process.
   Unlike the original, this article is not build upon a long history but intends to provide guidance at the outset of an emerging practice.
 header-includes: >
   \setlength{\columnsep}{18pt}
   \usepackage{url}
   \usepackage{breakurl}
   \PassOptionsToPackage{hyperindex,breaklinks}{hyperref}
-#  \hypersetup{
-#    colorlinks,
-#    linkcolor={blue!50!black},
-#    citecolor={blue!50!black},
-#    urlcolor={blue!80!black}
-#  }
-#  \usepackage[normalem]{ulem}
 bibliography: bibliography.bib
 output:
-  #rticles::peerj_article:
-  #  base_format: rmarkdown::pdf_document # bookdown::pdf_document2 # for using \@ref()
-  #  keep_tex: yes
-  #  number_sections: yes
   pdf_document: 
     fig_caption: true
     keep_tex: true
