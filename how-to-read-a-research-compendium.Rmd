@@ -264,7 +264,7 @@ You should most certainly have improved your programming skills by reading and e
 > _This will require you to read tens of papers, perhaps in an unfamiliar field._
 > _What papers should you read?_
 > _Here is how you can use the three-pass approach to help._
-> _First, use an academic search engine such as Google Scholar or CiteSeer and some well-chosen keywords to find three to five recent highly-cited papers in the area. [@keshav_how_2016]
+> _First, use an academic search engine such as Google Scholar or CiteSeer and some well-chosen keywords to find three to five recent highly-cited papers in the area._ [@keshav_how_2016]
 
 No search capability comparable to scientific articles exists for research compendia, though you can of course use generic and academic search engines. More and more journals encourage reproducible research and software and data publication, so that extending your search regular search with keywords such as "reproduction", "reproducible", "open data/software/code" may give improve your results.
 
