@@ -283,6 +283,7 @@ In addition, you can search online platforms where research compendia have been 
 
 - GitHub&nbsp;label: [https://github.com/topics/research-compendium](https://github.com/topics/research-compendium)
 - Zenodo&nbsp;community: [https://zenodo.org/communities/research-compendium](https://zenodo.org/communities/research-compendium)
+- OSF&nbsp;tag: [https://osf.io/search/?q=tags:research-compendium](https://osf.io/search/?q=tags:research-compendium)
 
 There is no journal specifically for research compendia yet, but the following ones feature reproducibility, computational studies, or openness in a prominent way and can be a starting point for finding research compendia, if they fit your topic:
 
