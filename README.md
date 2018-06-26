@@ -1,6 +1,10 @@
 # How to Read a Research Compendium
 
-"How to Read a Research Compendium" - based on [S. Keshav's "How to Read a Paper"](http://blizzard.cs.uwaterloo.ca/keshav/wiki/index.php/HTRAP).
+"How to Read a Research Compendium" is published as a preprint on arXiv:
+
+> Nüst, Daniel, Carl Boettiger, and Ben Marwick. 2018. **"How to read a research compendium."** [arXiv:1806.09525](https://arxiv.org/abs/1806.09525) [cs.GL].
+
+The manuscript is based on [S. Keshav's "How to Read a Paper"](http://blizzard.cs.uwaterloo.ca/keshav/wiki/index.php/HTRAP).
 
 This "long-form" guide references numerous resources for technial details on research compendia, but itself is focussed on the full experience of interacting with a research compendium as a reader.
 
