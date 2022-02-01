@@ -4,15 +4,12 @@
 
 > Nüst, Daniel, Carl Boettiger, and Ben Marwick. 2018. **"How to read a research compendium."** [arXiv:1806.09525](https://arxiv.org/abs/1806.09525) [cs.GL].
 
+A mobile friendly HTML5 version of the article can be accessed at [https://**ar5iv.org**/html/1806.09525](https://ar5iv.org/html/1806.09525).
+
 The manuscript is based on [S. Keshav's "How to Read a Paper"](http://blizzard.cs.uwaterloo.ca/keshav/wiki/index.php/HTRAP).
 
 This "long-form" guide references numerous resources for technial details on research compendia, but itself is focussed on the full experience of interacting with a research compendium as a reader.
-
-## Read draft
-
-A PDF is rendered on Travis: [![Build Status](https://travis-ci.org/nuest/how-to-read-a-research-compendium.svg?branch=master)](https://travis-ci.org/nuest/how-to-read-a-research-compendium)
-
-Download it: [https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf](https://nuest.github.io/how-to-read-a-research-compendium/how-to-read-a-research-compendium.pdf)
+If you want to apply the method presented in the paper, the [**Research Compendium Review Matrix**](https://docs.google.com/spreadsheets/d/18VrkcvTWDyvsldRKfgw2jnhfd5C6xbMwGZNE4ILjXlw/edit?usp=sharing) will be useful.
 
 ## Render the paper PDF locally
 
@@ -30,3 +27,7 @@ Locally with a container: See the command used in `.travis.yml`.
 - [Daniel Nüst](https://github.com/nuest/)
 - [Ben Marwick](https://github.com/benmarwick/)
 - [Carl Boettiger](https://github.com/cboettig/)
+
+## License
+
+Creative Commons Attribution Share-Alike (CC BY-SA 4.0)
